@@ -19,12 +19,11 @@ public class AddCustomerTest extends TestBase {
 
         driver.findElement(By.cssSelector(OR.getProperty("addBtn"))).click();
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         Assert.assertTrue(alert.getText().contains(alertText));
-
         alert.accept();
-        Thread.sleep(3000);
 
+        Assert.fail("Customer not added successfully");
     }
 
     @DataProvider

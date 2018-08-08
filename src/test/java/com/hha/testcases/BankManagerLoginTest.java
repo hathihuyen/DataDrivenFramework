@@ -12,7 +12,8 @@ public class BankManagerLoginTest extends TestBase {
         driver.findElement(By.cssSelector(OR.getProperty("bmlBtn"))).click();
         //Thread.sleep(3000);
         Assert.assertTrue(isElementPresent(By.cssSelector(OR.getProperty("addCustBtn"))), "Login not successfully");
-
         log.debug("Bank Manager Login successfully executed");
+
+        Assert.fail("Login not successfully");
     }
 }
