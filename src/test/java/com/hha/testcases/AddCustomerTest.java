@@ -11,13 +11,13 @@ import org.testng.annotations.Test;
 public class AddCustomerTest extends TestBase {
     @Test(dataProvider = "getData")
     public void addCustomer(String firstName, String lastName, String postCode, String alertText) throws InterruptedException {
-        driver.findElement(By.cssSelector(OR.getProperty("addCustBtn"))).click();
+        click("addCustBtn_CSS");
 
-        driver.findElement(By.cssSelector(OR.getProperty("firstname"))).sendKeys(firstName);
-        driver.findElement(By.cssSelector(OR.getProperty("lastname"))).sendKeys(lastName);
-        driver.findElement(By.cssSelector(OR.getProperty("postcode"))).sendKeys(postCode);
+        type("firstname_CSS", firstName);
+        type("lastname_XPATH", lastName);
+        type("postcode_CSS", postCode);
 
-        driver.findElement(By.cssSelector(OR.getProperty("addBtn"))).click();
+        click("addBtn_CSS");
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
         //Thread.sleep(3000);
         Assert.assertTrue(alert.getText().contains(alertText));

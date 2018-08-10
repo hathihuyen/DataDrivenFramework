@@ -1,6 +1,10 @@
 package com.hha.base;
 
 import com.hha.utilities.ExcelReader;
+import com.hha.utilities.ExtentManager;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -41,6 +45,8 @@ public class TestBase {
     public static Logger log = Logger.getLogger("devpinoyLogger");
     public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir") + "//src//test//resources//excel//testdata.xlsx");
     public static WebDriverWait wait;
+    public ExtentReports rep = ExtentManager.getInstance();
+    public static ExtentTest test;
 
     @BeforeSuite
     public void setUp() {
@@ -98,6 +104,28 @@ public class TestBase {
         } catch (NoSuchElementException e){
             return false;
         }
+    }
+
+    public void click(String locator){
+        if (locator.endsWith("_CSS")){
+            driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
+        } else if (locator.endsWith("_XPATH")){
+            driver.findElement(By.xpath(OR.getProperty(locator))).click();
+        } else if (locator.endsWith("_ID")){
+            driver.findElement(By.id(OR.getProperty(locator))).click();
+        }
+        test.log(LogStatus.INFO, "Clicking on : " + locator);
+    }
+
+    public void type(String locator, String value){
+        if (locator.endsWith("_CSS")){
+            driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
+        } else if (locator.endsWith("_XPATH")){
+            driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
+        } else if (locator.endsWith("_ID")){
+            driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
+        }
+        test.log(LogStatus.INFO, "Typing in : " + locator + " entered value as " + value);
     }
 
     @AfterSuite

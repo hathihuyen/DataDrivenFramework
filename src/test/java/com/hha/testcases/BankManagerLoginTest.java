@@ -9,11 +9,11 @@ public class BankManagerLoginTest extends TestBase {
     @Test
     public void loginAsBankManager() throws InterruptedException {
         log.debug("Inside Login Test");
-        driver.findElement(By.cssSelector(OR.getProperty("bmlBtn"))).click();
+        click("bmlBtn_CSS");
         //Thread.sleep(3000);
-        Assert.assertTrue(isElementPresent(By.cssSelector(OR.getProperty("addCustBtn"))), "Login not successfully");
+        Assert.assertTrue(isElementPresent(By.cssSelector(OR.getProperty("addCustBtn_CSS"))), "Login not successfully");
         log.debug("Bank Manager Login successfully executed");
 
-        Assert.fail("Login not successfully");
+        //Assert.fail("Login not successfully");
     }
 }
