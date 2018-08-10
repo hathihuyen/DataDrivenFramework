@@ -21,7 +21,7 @@
         <classes>
             <class name="com.hha.testcases.AddCustomerTest">
                 <methods>
-                    <include name="addCustomer"/>
+                    <include name="addCustomerTest"/>
                 </methods>
             </class>
         </classes>

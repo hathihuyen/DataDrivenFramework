@@ -1,6 +1,7 @@
 package com.hha.testcases;
 
 import com.hha.base.TestBase;
+import com.hha.utilities.TestUtil;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,8 +10,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class AddCustomerTest extends TestBase {
-    @Test(dataProvider = "getData")
-    public void addCustomer(String firstName, String lastName, String postCode, String alertText) throws InterruptedException {
+    @Test(dataProviderClass=TestUtil.class, dataProvider="dp")
+    public void addCustomerTest(String firstName, String lastName, String postCode, String alertText) throws InterruptedException {
         click("addCustBtn_CSS");
 
         type("firstname_CSS", firstName);
@@ -24,25 +25,5 @@ public class AddCustomerTest extends TestBase {
         alert.accept();
 
         Assert.fail("Customer not added successfully");
-    }
-
-    @DataProvider
-    public Object[][] getData(){
-        String sheetName = "AddCustomerTest";
-        int rows = excel.getRowCount(sheetName);
-        int cols = excel.getColumnCount(sheetName);
-        System.out.println("rows: " + rows);
-        System.out.println("cols: " + cols);
-
-        Object[][] data = new Object[rows-1][cols];
-
-        for (int rowNum = 2; rowNum <= rows; rowNum++){  //2
-            for (int colNum = 0; colNum < cols; colNum++){
-                Object obj = excel.getCellData(sheetName, colNum+1, rowNum);
-                System.out.println("colNum: " + colNum + ", rowNum: " + rowNum + " - " + obj);
-                data[rowNum-2][colNum] = obj;
-            }
-        }
-        return data;
     }
 }
