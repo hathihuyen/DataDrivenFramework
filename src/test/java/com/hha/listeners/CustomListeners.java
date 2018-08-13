@@ -30,9 +30,11 @@ public class CustomListeners extends TestBase implements ITestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        //Extent Report
         test.log(LogStatus.FAIL, iTestResult.getName().toUpperCase() + " Failed with exception : " + iTestResult.getThrowable());
         test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
 
+        //ReportNG
         Reporter.log("<a target=\"_blank\" href=" + TestUtil.screenshotName + ">Screenshot</a>");
         Reporter.log("<br>");
         Reporter.log("<br>");
