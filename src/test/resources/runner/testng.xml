@@ -26,4 +26,14 @@
             </class>
         </classes>
     </test>
+
+    <test name="Open Account Test">
+        <classes>
+            <class name="com.hha.testcases.OpenAccountTest">
+                <methods>
+                    <include name="openAccountTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

@@ -10,9 +10,11 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -129,6 +131,22 @@ public class TestBase {
             driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
         }
         test.log(LogStatus.INFO, "Typing in : " + locator + " entered value as " + value);
+    }
+
+    public static WebElement dropdownlist;
+
+    public void select(String locator, String value){
+        if (locator.endsWith("_CSS")){
+            dropdownlist = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+        } else if (locator.endsWith("_XPATH")){
+            dropdownlist = driver.findElement(By.xpath(OR.getProperty(locator)));
+        } else if (locator.endsWith("_ID")){
+            dropdownlist = driver.findElement(By.id(OR.getProperty(locator)));
+        }
+        Select select = new Select(dropdownlist);
+        select.selectByVisibleText(value);
+
+        test.log(LogStatus.INFO, "Selecting from dropdown list : " + locator + " value as " + value);
     }
 
     public static void verifyEquals(String expected, String actual) throws IOException {
