@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class BankManagerLoginTest extends TestBase {
     @Test
-    public void loginAsBankManager() throws InterruptedException, IOException {
+    public void bankManagerLoginTest() throws InterruptedException, IOException {
         verifyEquals("xyz", "xyz");
         Thread.sleep(3000);
 

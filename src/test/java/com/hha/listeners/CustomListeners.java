@@ -3,15 +3,16 @@ package com.hha.listeners;
 import com.hha.base.TestBase;
 import com.hha.utilities.TestUtil;
 import com.relevantcodes.extentreports.LogStatus;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.Reporter;
+import org.testng.*;
 
 import java.io.IOException;
 
 public class CustomListeners extends TestBase implements ITestListener {
     public void onTestStart(ITestResult iTestResult) {
+        //runmodes - Y
+        if (!TestUtil.isTestRunnable(iTestResult.getName(), excel)){
+            throw new SkipException("Skipping the test " + iTestResult.getName().toUpperCase() + "as the Run mode is N");
+        }
         test = rep.startTest(iTestResult.getName().toUpperCase());
     }
 
@@ -46,6 +47,9 @@ public class CustomListeners extends TestBase implements ITestListener {
 
     public void onTestSkipped(ITestResult iTestResult) {
 
+        test.log(LogStatus.SKIP, "_Skipping the test " + iTestResult.getName().toUpperCase() + "as the Run mode is N");
+        rep.endTest(test);
+        rep.flush();
     }
 
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
@@ -53,7 +57,6 @@ public class CustomListeners extends TestBase implements ITestListener {
     }
 
     public void onStart(ITestContext iTestContext) {
-
     }
 
     public void onFinish(ITestContext iTestContext) {

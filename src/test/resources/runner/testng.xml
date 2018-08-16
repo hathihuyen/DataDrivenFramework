@@ -11,7 +11,7 @@
         <classes>
             <class name="com.hha.testcases.BankManagerLoginTest">
                 <methods>
-                    <include name="loginAsBankManager"/>
+                    <include name="bankManagerLoginTest"/>
                 </methods>
             </class>
         </classes>
