@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Date;
+import java.util.Hashtable;
 
 public class TestUtil extends TestBase {
     public static String screenshotPath;
@@ -28,17 +29,33 @@ public class TestUtil extends TestBase {
         String sheetName = m.getName();
         int rows = excel.getRowCount(sheetName);
         int cols = excel.getColumnCount(sheetName);
-        System.out.println("rows: " + rows);
-        System.out.println("cols: " + cols);
+        //System.out.println("rows: " + rows);
+        //System.out.println("cols: " + cols);
 
-        Object[][] data = new Object[rows-1][cols];
+        //Object[][] data = new Object[rows-1][cols];
 
-        for (int rowNum = 2; rowNum <= rows; rowNum++){  //2
-            for (int colNum = 0; colNum < cols; colNum++){
-                Object obj = excel.getCellData(sheetName, colNum+1, rowNum);
-                System.out.println("colNum: " + colNum + ", rowNum: " + rowNum + " - " + obj);
-                data[rowNum-2][colNum] = obj;
+        //for (int rowNum = 2; rowNum <= rows; rowNum++){  //2
+        //    for (int colNum = 0; colNum < cols; colNum++){
+        //        Object obj = excel.getCellData(sheetName, colNum+1, rowNum);
+        //        System.out.println("colNum: " + colNum + ", rowNum: " + rowNum + " - " + obj);
+        //        data[rowNum-2][colNum] = obj;
+        //    }
+        //}
+        Object[][] data = new Object[rows - 1][1];
+        Hashtable<String,String> table = null;
+        for (int rowNum = 2; rowNum <= rows; rowNum++) { // 2
+            table = new Hashtable<String,String>();
+            for (int colNum = 0; colNum < cols; colNum++) {
+                // data[0][0]
+                System.out.println("colNum: " + colNum + ", rowNum: " + rowNum + " - " + excel.getCellData(sheetName, colNum + 1, rowNum));
+                String colName = excel.getCellData(sheetName, colNum+1, 1);
+                System.out.println(colName);
+                String testData = excel.getCellData(sheetName, colNum+1, rowNum);
+                System.out.println(testData);
+                table.put(colName, testData);
+                data[rowNum - 2][0] = table;
             }
+            //data[rowNum - 2][0] = table;
         }
         return data;
     }
@@ -53,9 +70,7 @@ public class TestUtil extends TestBase {
             String testCase = excel.getCellData(sheetName, 1, rNum);
             //colNum = 2 --> "Runmode"
             String runmode = excel.getCellData(sheetName, 2, rNum);
-
             if(testCase.equalsIgnoreCase(testName)){
-
                 if(runmode.equalsIgnoreCase("Y"))
                     return true;
                 else

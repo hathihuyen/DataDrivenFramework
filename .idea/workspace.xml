@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2639bc7d-10cd-4779-b37f-f2e8171a410b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hha/listeners/CustomListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hha/listeners/CustomListeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hha/testcases/BankManagerLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hha/testcases/BankManagerLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hha/testcases/AddCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hha/testcases/AddCustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hha/testcases/OpenAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hha/testcases/OpenAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hha/utilities/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hha/utilities/TestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/excel/testdata.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/excel/testdata.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/logs/Application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/Application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/logs/Selenium.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/Selenium.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/runner/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runner/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hha/testcases/BankManagerLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/hha/testcases/BankManagerLoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hha/testcases/AddCustomerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/hha/testcases/AddCustomerTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,25 +23,25 @@
     <session id="759322679">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="6" />
-          <entry key="project.open.time.17" value="3" />
+          <entry key="project.open.time.17" value="4" />
           <entry key="project.open.time.18" value="2" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="19" />
+          <entry key="java" value="21" />
           <entry key="log" value="7" />
           <entry key="properties" value="6" />
           <entry key="xml" value="8" />
@@ -50,7 +49,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7042" />
+          <entry key="java" value="7545" />
           <entry key="log" value="5" />
           <entry key="properties" value="471" />
           <entry key="xml" value="604" />
@@ -58,7 +57,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="21" />
           <entry key="Log" value="2" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Properties" value="6" />
@@ -67,7 +66,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7042" />
+          <entry key="JAVA" value="7545" />
           <entry key="Log" value="5" />
           <entry key="Properties" value="471" />
           <entry key="XML" value="604" />
@@ -78,28 +77,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/testcases/OpenAccountTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/runner/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/base/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-313">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="396">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -116,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/listeners/CustomListeners.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="126">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/utilities/TestUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+            <state relative-caret-position="251">
+              <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,9 +122,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/testcases/AddCustomerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/testcases/OpenAccountTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/utilities/ExcelReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="720">
               <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -160,8 +162,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/logs/Selenium.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="2754">
-              <caret line="2241" selection-start-line="2241" selection-end-line="2241" />
+            <state relative-caret-position="8874">
+              <caret line="2431" selection-start-line="2431" selection-end-line="2431" />
             </state>
           </provider>
         </entry>
@@ -202,13 +204,13 @@
         <option value="$PROJECT_DIR$/src/test/resources/logs/Application.log" />
         <option value="$PROJECT_DIR$/src/test/java/com/hha/base/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/resources/properties/OR.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/hha/testcases/OpenAccountTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/hha/testcases/AddCustomerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hha/testcases/BankManagerLoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/runner/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/hha/utilities/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/hha/utilities/TestUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hha/listeners/CustomListeners.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hha/utilities/TestUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hha/testcases/AddCustomerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hha/testcases/OpenAccountTest.java" />
       </list>
     </option>
   </component>
@@ -225,11 +227,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="67" />
     <option name="y" value="27" />
-    <option name="width" value="1333" />
-    <option name="height" value="429" />
+    <option name="width" value="1739" />
+    <option name="height" value="555" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -245,6 +247,41 @@
             <path>
               <item name="DataDrivenFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataDrivenFramework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataDrivenFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataDrivenFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataDrivenFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataDrivenFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataDrivenFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataDrivenFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataDrivenFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataDrivenFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hha" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataDrivenFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataDrivenFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hha" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataDrivenFramework" type="b2602c69:ProjectViewProjectNode" />
@@ -274,7 +311,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534390192957" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534478974618" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -425,10 +462,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="27" width="1739" height="555" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2097399" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22976965" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -524,20 +561,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/testcases/AddCustomerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/runner/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/testcases/OpenAccountTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/base/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="396">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -545,6 +579,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/listeners/CustomListeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/utilities/ExcelReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -560,8 +614,8 @@
         <state relative-caret-position="-1350" />
       </provider>
       <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="2754">
-          <caret line="2241" selection-start-line="2241" selection-end-line="2241" />
+        <state relative-caret-position="8874">
+          <caret line="2431" selection-start-line="2431" selection-end-line="2431" />
         </state>
       </provider>
     </entry>
@@ -572,47 +626,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/runner/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/utilities/ExcelReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/utilities/TestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+        <state relative-caret-position="251">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/base/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/testcases/AddCustomerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="126">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/listeners/CustomListeners.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hha/testcases/OpenAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
     </entry>
